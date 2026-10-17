@@ -12,6 +12,10 @@ venv/
 # ---- 本地生成的向量/BM25 索引缓存（可用脚本重建）----
 data/vector_index/
 
+# ---- 真实文献不上传（版权属于出版商），仓库仅保留脚本生成的样例 PDF ----
+data/pdfs/*
+!data/pdfs/sample_*.pdf
+
 # ---- 个人文档 ----
 INTERVIEW_SCRIPT.md
 
