@@ -1,0 +1,129 @@
+{
+  "top_k": 4,
+  "configs": {
+    "纯向量检索(基线)": {
+      "n": 18,
+      "k": 4,
+      "recall_at_k": 0.7778,
+      "mrr": 0.7222,
+      "latency_ms": 261.3,
+      "recall_by_type": {
+        "term": 0.8,
+        "metric": 0.7,
+        "semantic": 1.0
+      },
+      "misses": [
+        {
+          "question": "ResNet-V 用了什么骨干网络？",
+          "type": "term"
+        },
+        {
+          "question": "MovieLens-1M 数据集上点击率提升了多少？",
+          "type": "metric"
+        },
+        {
+          "question": "ViT-Small 微调使用的学习率是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "全量用户场景的 AUC 是多少？",
+          "type": "metric"
+        }
+      ]
+    },
+    "BM25+向量+RRF": {
+      "n": 18,
+      "k": 4,
+      "recall_at_k": 0.8333,
+      "mrr": 0.7963,
+      "latency_ms": 363.3,
+      "recall_by_type": {
+        "term": 1.0,
+        "metric": 0.7,
+        "semantic": 1.0
+      },
+      "misses": [
+        {
+          "question": "MovieLens-1M 数据集上点击率提升了多少？",
+          "type": "metric"
+        },
+        {
+          "question": "ViT-Small 微调使用的学习率是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "全量用户场景的 AUC 是多少？",
+          "type": "metric"
+        }
+      ]
+    },
+    "混合检索+Cross-Encoder重排": {
+      "n": 18,
+      "k": 4,
+      "recall_at_k": 0.8889,
+      "mrr": 0.8056,
+      "latency_ms": 1655.5,
+      "recall_by_type": {
+        "term": 1.0,
+        "metric": 0.8,
+        "semantic": 1.0
+      },
+      "misses": [
+        {
+          "question": "ViT-Small 微调使用的学习率是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "全量用户场景的 AUC 是多少？",
+          "type": "metric"
+        }
+      ]
+    },
+    "端到端引用正确率(完整管线)": {
+      "n": 10,
+      "citation_accuracy": 0.8,
+      "details": [
+        {
+          "question": "ResNet-V 用了什么骨干网络？",
+          "cited_correctly": true
+        },
+        {
+          "question": "ViT-Small 冻结了前几层编码器？",
+          "cited_correctly": true
+        },
+        {
+          "question": "GraphSAGE 训练用的负采样比例是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "ResNet-V 的宏平均 F1 分数是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "ViT-Small 的 F1 分数是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "冷启动用户的 AUC 是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "MovieLens-1M 数据集上点击率提升了多少？",
+          "cited_correctly": false
+        },
+        {
+          "question": "ViT-Small 微调使用的学习率是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "ResNet-V 训练用的优化器是什么？",
+          "cited_correctly": true
+        },
+        {
+          "question": "推荐系统的冷启动问题是怎么解决的？",
+          "cited_correctly": false
+        }
+      ]
+    }
+  }
+}

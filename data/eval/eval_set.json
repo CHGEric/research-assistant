@@ -1,0 +1,24 @@
+{
+  "description": "科研文献智能助手 - 检索评测金标集（基于 3 篇模拟文献人工标注）",
+  "notes": "gold_source=命中判定要求检索块的来源文件；gold_keywords=命中要求至少一个关键词出现在该块正文；gold_title=端到端引用正确率判定用；type=term(术语精确)/metric(指标数字)/semantic(语义理解)",
+  "items": [
+    {"id": 1,  "question": "ResNet-V 用了什么骨干网络？", "type": "term", "gold_source": "sample_01_resnet_variants.pdf", "gold_title": "基于残差网络变体的图像分类研究", "gold_keywords": ["ResNet-18", "骨干"]},
+    {"id": 2,  "question": "ViT-Small 冻结了前几层编码器？", "type": "term", "gold_source": "sample_02_vit_small.pdf", "gold_title": "轻量级 Vision Transformer 的迁移学习研究", "gold_keywords": ["冻结前 6 层", "6 层"]},
+    {"id": 3,  "question": "GraphSAGE 训练用的负采样比例是多少？", "type": "term", "gold_source": "sample_03_gnn_recommendation.pdf", "gold_title": "基于图神经网络的推荐系统冷启动研究", "gold_keywords": ["1:5"]},
+    {"id": 4,  "question": "ResNet-V 的宏平均 F1 分数是多少？", "type": "metric", "gold_source": "sample_01_resnet_variants.pdf", "gold_title": "基于残差网络变体的图像分类研究", "gold_keywords": ["0.905"]},
+    {"id": 5,  "question": "ViT-Small 的 F1 分数是多少？", "type": "metric", "gold_source": "sample_02_vit_small.pdf", "gold_title": "轻量级 Vision Transformer 的迁移学习研究", "gold_keywords": ["0.941"]},
+    {"id": 6,  "question": "冷启动用户的 AUC 是多少？", "type": "metric", "gold_source": "sample_03_gnn_recommendation.pdf", "gold_title": "基于图神经网络的推荐系统冷启动研究", "gold_keywords": ["0.861"]},
+    {"id": 7,  "question": "MovieLens-1M 数据集上点击率提升了多少？", "type": "metric", "gold_source": "sample_03_gnn_recommendation.pdf", "gold_title": "基于图神经网络的推荐系统冷启动研究", "gold_keywords": ["18.6%"]},
+    {"id": 8,  "question": "ViT-Small 微调使用的学习率是多少？", "type": "metric", "gold_source": "sample_02_vit_small.pdf", "gold_title": "轻量级 Vision Transformer 的迁移学习研究", "gold_keywords": ["3e-4"]},
+    {"id": 9,  "question": "ResNet-V 训练用的优化器是什么？", "type": "term", "gold_source": "sample_01_resnet_variants.pdf", "gold_title": "基于残差网络变体的图像分类研究", "gold_keywords": ["SGD"]},
+    {"id": 10, "question": "推荐系统的冷启动问题是怎么解决的？", "type": "semantic", "gold_source": "sample_03_gnn_recommendation.pdf", "gold_title": "基于图神经网络的推荐系统冷启动研究", "gold_keywords": ["GraphSAGE", "二部图"]},
+    {"id": 11, "question": "注意力机制对分类性能有什么帮助？", "type": "semantic", "gold_source": "sample_01_resnet_variants.pdf", "gold_title": "基于残差网络变体的图像分类研究", "gold_keywords": ["SE Block", "注意力"]},
+    {"id": 12, "question": "预训练 ViT 在小样本任务上表现如何？", "type": "semantic", "gold_source": "sample_02_vit_small.pdf", "gold_title": "轻量级 Vision Transformer 的迁移学习研究", "gold_keywords": ["迁移学习", "Oxford Flowers"]},
+    {"id": 13, "question": "ResNet-V 的推理速度是多少？", "type": "metric", "gold_source": "sample_01_resnet_variants.pdf", "gold_title": "基于残差网络变体的图像分类研究", "gold_keywords": ["132"]},
+    {"id": 14, "question": "ViT-Small 的训练耗时是多久？", "type": "metric", "gold_source": "sample_02_vit_small.pdf", "gold_title": "轻量级 Vision Transformer 的迁移学习研究", "gold_keywords": ["35 分钟"]},
+    {"id": 15, "question": "推荐模型的推理延迟控制在多少毫秒以内？", "type": "metric", "gold_source": "sample_03_gnn_recommendation.pdf", "gold_title": "基于图神经网络的推荐系统冷启动研究", "gold_keywords": ["15ms"]},
+    {"id": 16, "question": "RandAugment 用在什么场景？", "type": "term", "gold_source": "sample_02_vit_small.pdf", "gold_title": "轻量级 Vision Transformer 的迁移学习研究", "gold_keywords": ["RandAugment"]},
+    {"id": 17, "question": "余弦退火调度贡献了多少个百分点的提升？", "type": "metric", "gold_source": "sample_01_resnet_variants.pdf", "gold_title": "基于残差网络变体的图像分类研究", "gold_keywords": ["0.6"]},
+    {"id": 18, "question": "全量用户场景的 AUC 是多少？", "type": "metric", "gold_source": "sample_03_gnn_recommendation.pdf", "gold_title": "基于图神经网络的推荐系统冷启动研究", "gold_keywords": ["0.883"]}
+  ]
+}

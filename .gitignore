@@ -1,0 +1,26 @@
+# ---- 密钥与本地环境（绝不上传）----
+.env
+.env.*
+*.key
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- 本地生成的向量/BM25 索引缓存（可用脚本重建）----
+data/vector_index/
+
+# ---- 个人文档 ----
+INTERVIEW_SCRIPT.md
+
+# ---- 临时文件 ----
+.temp/
+*.log
+
+# ---- IDE / 系统 ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
