@@ -47,7 +47,7 @@ INDEX_DIR.mkdir(parents=True, exist_ok=True)
 # TOP_K         每次检索取回最相似的 K 个块。本科研问答 K=4~6 常见
 CHUNK_SIZE = 800
 CHUNK_OVERLAP = 100
-TOP_K = 1
+TOP_K = 4
 
 # ---- 混合检索与重排参数 ------------------------------------------------------
 # RECALL_N      双路召回阶段每路各取 N 个候选（向量一路 + BM25 一路）
