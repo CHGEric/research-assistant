@@ -99,4 +99,7 @@ def get_embeddings():
         model=EMBEDDING_MODEL,
         base_url=ZHIPU_BASE_URL,
         api_key=ZHIPU_API_KEY,
+        # 智谱 Embedding API 限制：单次请求 input 数组最多 64 条（错误码 1214）。
+        # LangChain 默认 chunk_size=1000，文献一多单批就超限；16 条/批留足余量。
+        chunk_size=16,
     )
