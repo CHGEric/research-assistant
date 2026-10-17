@@ -17,7 +17,6 @@ Streamlit 交互界面 —— 项目的"门面"
   thread_id 正是利用这一点实现多轮记忆与界面的对齐。
 """
 
-import shutil
 import uuid
 from pathlib import Path
 
@@ -87,8 +86,8 @@ def _save_uploads(uploads: list[UploadedFile]) -> int:
     """把用户上传的文件写入 data/pdfs（同名覆盖）。"""
     for up in uploads:
         dest = PDF_DIR / up.name
-        with open(dest, "wb") as f:
-            shutil.copyfileobj(up.file, f)
+        # UploadedFile 是 BytesIO 子类；新版 Streamlit 已移除 .file 属性，用 getvalue() 全版本兼容
+        dest.write_bytes(up.getvalue())
     return len(uploads)
 
 
