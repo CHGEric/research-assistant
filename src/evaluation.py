@@ -52,6 +52,7 @@ def eval_retrieval(search_fn, eval_set: list[dict], k: int = TOP_K) -> dict:
     """
     recalls, mrrs, latencies, misses = [], [], [], []
     per_type: dict[str, list[float]] = {}  # 分题型统计 Recall，定位弱项
+    per_item: list[dict] = []  # 每题命中明细（子集分析用）
 
     for item in eval_set:
         t0 = time.perf_counter()
@@ -66,6 +67,12 @@ def eval_retrieval(search_fn, eval_set: list[dict], k: int = TOP_K) -> dict:
         per_type.setdefault(item["type"], []).append(recall)
         if not ranks:
             misses.append({"question": item["question"], "type": item["type"]})
+        per_item.append({
+            "id": item.get("id"),
+            "type": item["type"],
+            "hit": bool(ranks),
+            "rank": ranks[0] if ranks else None,
+        })
 
     return {
         "n": len(eval_set),
@@ -74,6 +81,7 @@ def eval_retrieval(search_fn, eval_set: list[dict], k: int = TOP_K) -> dict:
         "mrr": round(mean(mrrs), 4),
         "latency_ms": round(mean(latencies) * 1000, 1),
         "recall_by_type": {t: round(mean(v), 4) for t, v in per_type.items()},
+        "per_item": per_item,
         "misses": misses,
     }
 

@@ -1,0 +1,1185 @@
+{
+  "top_k": 4,
+  "configs": {
+    "纯向量检索(基线)": {
+      "n": 41,
+      "k": 4,
+      "recall_at_k": 0.4634,
+      "mrr": 0.4024,
+      "latency_ms": 237.9,
+      "recall_by_type": {
+        "term": 0.4,
+        "metric": 0.4762,
+        "semantic": 0.6
+      },
+      "per_item": [
+        {
+          "id": 1,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 2,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 3,
+          "type": "term",
+          "hit": true,
+          "rank": 2
+        },
+        {
+          "id": 4,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 5,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 7,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 8,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 9,
+          "type": "term",
+          "hit": true,
+          "rank": 2
+        },
+        {
+          "id": 10,
+          "type": "semantic",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 11,
+          "type": "semantic",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 12,
+          "type": "semantic",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 13,
+          "type": "metric",
+          "hit": true,
+          "rank": 2
+        },
+        {
+          "id": 14,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 15,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 16,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 17,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 18,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 19,
+          "type": "term",
+          "hit": true,
+          "rank": 2
+        },
+        {
+          "id": 20,
+          "type": "metric",
+          "hit": true,
+          "rank": 2
+        },
+        {
+          "id": 21,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 22,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 23,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 24,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 25,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 26,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 27,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 28,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 29,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 30,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 31,
+          "type": "semantic",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 32,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 33,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 34,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 35,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 36,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 37,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 38,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 39,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 40,
+          "type": "semantic",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 41,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        }
+      ],
+      "misses": [
+        {
+          "question": "ResNet-V 用了什么骨干网络？",
+          "type": "term"
+        },
+        {
+          "question": "MovieLens-1M 数据集上点击率提升了多少？",
+          "type": "metric"
+        },
+        {
+          "question": "ViT-Small 微调使用的学习率是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "全量用户场景的 AUC 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "推荐模型训练使用了什么排序损失？",
+          "type": "term"
+        },
+        {
+          "question": "scMDCL 在 PBMC-10k 数据集上的 ARI 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMDCL 在 PBMC-10k 数据集上的 ACC 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "Chen-2019 数据集包含多少个细胞？",
+          "type": "metric"
+        },
+        {
+          "question": "scMDCL 的数据预处理选取了多少个高变基因？",
+          "type": "term"
+        },
+        {
+          "question": "scMDCL 发表在哪个期刊上？",
+          "type": "term"
+        },
+        {
+          "question": "scMDCL 框架的第一步使用什么提取细胞特征？",
+          "type": "term"
+        },
+        {
+          "question": "scMDCL 用什么技术加强同一细胞不同组学特征的交互？",
+          "type": "semantic"
+        },
+        {
+          "question": "Ma-2020 数据集被分成了几个批次？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 在 PBMC-10k 数据集上的 ARI 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 在 PBMC-10k 数据集上的 ACC 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 在 PBMC-3k 数据集上 ARI 比第二名提升了多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 的训练使用什么优化器？",
+          "type": "term"
+        },
+        {
+          "question": "scMIC 的训练学习率是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 构建细胞图时近邻数 K 取多少？",
+          "type": "term"
+        },
+        {
+          "question": "scMIC 用什么工具流程做数据预处理？",
+          "type": "term"
+        },
+        {
+          "question": "scMIC 如何减少不同组学数据间的冗余信息？",
+          "type": "semantic"
+        },
+        {
+          "question": "scMIC 的实验运行在什么型号的 GPU 上？",
+          "type": "term"
+        }
+      ]
+    },
+    "BM25+向量+RRF": {
+      "n": 41,
+      "k": 4,
+      "recall_at_k": 0.5122,
+      "mrr": 0.4715,
+      "latency_ms": 342.8,
+      "recall_by_type": {
+        "term": 0.5333,
+        "metric": 0.4762,
+        "semantic": 0.6
+      },
+      "per_item": [
+        {
+          "id": 1,
+          "type": "term",
+          "hit": true,
+          "rank": 2
+        },
+        {
+          "id": 2,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 3,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 4,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 5,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 7,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 8,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 9,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 10,
+          "type": "semantic",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 11,
+          "type": "semantic",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 12,
+          "type": "semantic",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 13,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 14,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 15,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 16,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 17,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 18,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 19,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 20,
+          "type": "metric",
+          "hit": true,
+          "rank": 2
+        },
+        {
+          "id": 21,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 22,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 23,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 24,
+          "type": "term",
+          "hit": true,
+          "rank": 3
+        },
+        {
+          "id": 25,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 26,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 27,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 28,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 29,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 30,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 31,
+          "type": "semantic",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 32,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 33,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 34,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 35,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 36,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 37,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 38,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 39,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 40,
+          "type": "semantic",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 41,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        }
+      ],
+      "misses": [
+        {
+          "question": "MovieLens-1M 数据集上点击率提升了多少？",
+          "type": "metric"
+        },
+        {
+          "question": "ViT-Small 微调使用的学习率是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "全量用户场景的 AUC 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMDCL 在 PBMC-10k 数据集上的 ARI 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMDCL 在 PBMC-10k 数据集上的 ACC 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "Chen-2019 数据集包含多少个细胞？",
+          "type": "metric"
+        },
+        {
+          "question": "scMDCL 的数据预处理选取了多少个高变基因？",
+          "type": "term"
+        },
+        {
+          "question": "scMDCL 发表在哪个期刊上？",
+          "type": "term"
+        },
+        {
+          "question": "scMDCL 框架的第一步使用什么提取细胞特征？",
+          "type": "term"
+        },
+        {
+          "question": "scMDCL 用什么技术加强同一细胞不同组学特征的交互？",
+          "type": "semantic"
+        },
+        {
+          "question": "Ma-2020 数据集被分成了几个批次？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 在 PBMC-10k 数据集上的 ARI 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 在 PBMC-10k 数据集上的 ACC 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 在 PBMC-3k 数据集上 ARI 比第二名提升了多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 的训练使用什么优化器？",
+          "type": "term"
+        },
+        {
+          "question": "scMIC 的训练学习率是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 构建细胞图时近邻数 K 取多少？",
+          "type": "term"
+        },
+        {
+          "question": "scMIC 用什么工具流程做数据预处理？",
+          "type": "term"
+        },
+        {
+          "question": "scMIC 如何减少不同组学数据间的冗余信息？",
+          "type": "semantic"
+        },
+        {
+          "question": "scMIC 的实验运行在什么型号的 GPU 上？",
+          "type": "term"
+        }
+      ]
+    },
+    "混合检索+Cross-Encoder重排": {
+      "n": 41,
+      "k": 4,
+      "recall_at_k": 0.6585,
+      "mrr": 0.5894,
+      "latency_ms": 3398.3,
+      "recall_by_type": {
+        "term": 0.6,
+        "metric": 0.6667,
+        "semantic": 0.8
+      },
+      "per_item": [
+        {
+          "id": 1,
+          "type": "term",
+          "hit": true,
+          "rank": 2
+        },
+        {
+          "id": 2,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 3,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 4,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 5,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 7,
+          "type": "metric",
+          "hit": true,
+          "rank": 2
+        },
+        {
+          "id": 8,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 9,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 10,
+          "type": "semantic",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 11,
+          "type": "semantic",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 12,
+          "type": "semantic",
+          "hit": true,
+          "rank": 2
+        },
+        {
+          "id": 13,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 14,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 15,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 16,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 17,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 18,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 19,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 20,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 21,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 22,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 23,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 24,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 25,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 26,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 27,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 28,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 29,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 30,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 31,
+          "type": "semantic",
+          "hit": true,
+          "rank": 3
+        },
+        {
+          "id": 32,
+          "type": "metric",
+          "hit": true,
+          "rank": 3
+        },
+        {
+          "id": 33,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 34,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 35,
+          "type": "metric",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 36,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 37,
+          "type": "metric",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 38,
+          "type": "term",
+          "hit": true,
+          "rank": 1
+        },
+        {
+          "id": 39,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 40,
+          "type": "semantic",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "id": 41,
+          "type": "term",
+          "hit": false,
+          "rank": null
+        }
+      ],
+      "misses": [
+        {
+          "question": "ViT-Small 微调使用的学习率是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "全量用户场景的 AUC 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMDCL 在 PBMC-10k 数据集上的 ACC 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "Chen-2019 数据集包含多少个细胞？",
+          "type": "metric"
+        },
+        {
+          "question": "scMDCL 的数据预处理选取了多少个高变基因？",
+          "type": "term"
+        },
+        {
+          "question": "scMDCL 发表在哪个期刊上？",
+          "type": "term"
+        },
+        {
+          "question": "scMDCL 框架的第一步使用什么提取细胞特征？",
+          "type": "term"
+        },
+        {
+          "question": "scMIC 在 PBMC-10k 数据集上的 ARI 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 在 PBMC-10k 数据集上的 ACC 是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 的训练使用什么优化器？",
+          "type": "term"
+        },
+        {
+          "question": "scMIC 的训练学习率是多少？",
+          "type": "metric"
+        },
+        {
+          "question": "scMIC 用什么工具流程做数据预处理？",
+          "type": "term"
+        },
+        {
+          "question": "scMIC 如何减少不同组学数据间的冗余信息？",
+          "type": "semantic"
+        },
+        {
+          "question": "scMIC 的实验运行在什么型号的 GPU 上？",
+          "type": "term"
+        }
+      ]
+    },
+    "端到端引用正确率(完整管线)": {
+      "n": 41,
+      "citation_accuracy": 0.4878,
+      "details": [
+        {
+          "question": "ResNet-V 用了什么骨干网络？",
+          "cited_correctly": true
+        },
+        {
+          "question": "ViT-Small 冻结了前几层编码器？",
+          "cited_correctly": true
+        },
+        {
+          "question": "GraphSAGE 训练用的负采样比例是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "ResNet-V 的宏平均 F1 分数是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "ViT-Small 的 F1 分数是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "冷启动用户的 AUC 是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "MovieLens-1M 数据集上点击率提升了多少？",
+          "cited_correctly": false
+        },
+        {
+          "question": "ViT-Small 微调使用的学习率是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "ResNet-V 训练用的优化器是什么？",
+          "cited_correctly": true
+        },
+        {
+          "question": "推荐系统的冷启动问题是怎么解决的？",
+          "cited_correctly": false
+        },
+        {
+          "question": "注意力机制对分类性能有什么帮助？",
+          "cited_correctly": true
+        },
+        {
+          "question": "预训练 ViT 在小样本任务上表现如何？",
+          "cited_correctly": true
+        },
+        {
+          "question": "ResNet-V 的推理速度是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "ViT-Small 的训练耗时是多久？",
+          "cited_correctly": true
+        },
+        {
+          "question": "推荐模型的推理延迟控制在多少毫秒以内？",
+          "cited_correctly": true
+        },
+        {
+          "question": "RandAugment 用在什么场景？",
+          "cited_correctly": true
+        },
+        {
+          "question": "余弦退火调度贡献了多少个百分点的提升？",
+          "cited_correctly": false
+        },
+        {
+          "question": "全量用户场景的 AUC 是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "ResNet-V 的通道注意力模块插入在什么位置？",
+          "cited_correctly": true
+        },
+        {
+          "question": "注意力模块为 ResNet-V 贡献了几个百分点的提升？",
+          "cited_correctly": true
+        },
+        {
+          "question": "冻结早期层减少了多少训练显存占用？",
+          "cited_correctly": true
+        },
+        {
+          "question": "ViT-Small 与哪个同规模模型进行了对比？",
+          "cited_correctly": false
+        },
+        {
+          "question": "冷启动场景下的召回率@20 是多少？",
+          "cited_correctly": true
+        },
+        {
+          "question": "推荐模型训练使用了什么排序损失？",
+          "cited_correctly": true
+        },
+        {
+          "question": "scMDCL 在 PBMC-10k 数据集上的 ARI 是多少？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMDCL 在 PBMC-10k 数据集上的 ACC 是多少？",
+          "cited_correctly": false
+        },
+        {
+          "question": "Chen-2019 数据集包含多少个细胞？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMDCL 的数据预处理选取了多少个高变基因？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMDCL 发表在哪个期刊上？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMDCL 框架的第一步使用什么提取细胞特征？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMDCL 用什么技术加强同一细胞不同组学特征的交互？",
+          "cited_correctly": false
+        },
+        {
+          "question": "Ma-2020 数据集被分成了几个批次？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMIC 在 PBMC-10k 数据集上的 ARI 是多少？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMIC 在 PBMC-10k 数据集上的 ACC 是多少？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMIC 在 PBMC-3k 数据集上 ARI 比第二名提升了多少？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMIC 的训练使用什么优化器？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMIC 的训练学习率是多少？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMIC 构建细胞图时近邻数 K 取多少？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMIC 用什么工具流程做数据预处理？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMIC 如何减少不同组学数据间的冗余信息？",
+          "cited_correctly": false
+        },
+        {
+          "question": "scMIC 的实验运行在什么型号的 GPU 上？",
+          "cited_correctly": false
+        }
+      ]
+    }
+  }
+}

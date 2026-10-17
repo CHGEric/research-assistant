@@ -20,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from src.config import TOP_K, get_embeddings  # noqa: E402
+from src.config import PDF_DIR, TOP_K, get_embeddings  # noqa: E402
 from src.evaluation import (  # noqa: E402
     eval_e2e_citation,
     eval_retrieval,
@@ -38,6 +38,14 @@ def main():
     args = parser.parse_args()
 
     eval_set = load_eval_set()
+
+    # 金标文献缺失的题自动跳过：跨语言子集基于 2 篇版权论文（不随仓库分发），
+    # 克隆后仅放样例文献时跳过对应题，保证可复现口径与 README 一致。
+    available = {p.name for p in PDF_DIR.glob("*.pdf")}
+    dropped = [it for it in eval_set if it["gold_source"] not in available]
+    if dropped:
+        print(f"跳过 {len(dropped)} 题：金标文献不在 data/pdfs（如未放置的版权论文）")
+        eval_set = [it for it in eval_set if it["gold_source"] in available]
     print(f"加载金标评测集：{len(eval_set)} 题\n")
 
     vectorstore = load_index(get_embeddings())
